@@ -28,7 +28,7 @@ The need for accurate generation of acoustic holograms has increased with the pr
 1. [Introduction](#introduction)
 2. [Installation and Requirements](#installation-and-requirements)
 3. [Usage](#usage)
-4. [Data Structure](#data-structure)
+4. [Data and Code Structure](#data-and-code-structure)
 5. [Simulation](#simulation)
 6. [Recreating Experiments](#recreating-experiments)
 7. [License](#license)
@@ -71,9 +71,42 @@ Detailed description and context.
 
 ---
 
-## Usage
+## Data and Code Structure
 
-MATLAB:
+### Main Directory
 
-```matlab
-% Your MATLAB code examples here
+- `step_1_exp_prep_move_mic.py`: Script for preparing the experiment, including moving the microphone to the initial position.
+- `step_2_numerical_optimize.py`: Script for numerical optimization of the acoustic field.
+- `step_3_experimental_test_numerically_optimized.py`: Script for experimentally testing the numerically optimized acoustic field.
+- `step_4_experimental_optimize2match.py`: Script for adjusting the experiment based on the numerical optimization results.
+- `step_5_analyze_frequency_ver3.m`: MATLAB script for frequency analysis.
+- `step_5_compare_performance_ver2.m`: MATLAB script for performance comparison between experimental and numerical results.
+- `step_6_calculating_equilibirum.m`: MATLAB script for calculating the equilibrium state of the acoustic field.
+- `step_7_fit_equilibrium.m`: MATLAB script for fitting the calculated equilibrium state.
+- `step_8_exp_prep_move_calibrator.py`: Script for preparing the experiment, including moving the calibrator to the initial position.
+- `step_9_capture_calibration_image.py`: Script for capturing images for calibration.
+- `step_10_experimental_eq_nooptimization.py`: Script for experimental results without optimization.
+- `step_11_experimental_eq_optimization.py`: Script for experimental results with optimization.
+
+### Subfolders
+
+- `composite_image`: This folder contains composite images used in the paper.
+- `discussion`: This folder contains discussion points and supplementary material.
+- `experiment_data`: This folder contains all the raw and processed data from the experiments.
+- `fig_gen`: This folder contains scripts and data for generating figures for the paper.
+- `numerical_simulated_results`: This folder contains the results of the numerical simulations.
+
+---
+
+## Citation
+
+If you find this code useful for your research, please cite our paper.
+
+```bibtex
+@article{your_paper_identifier,
+  title={In-situ Optimization of Acoustic Hologram with Digital Twin},
+  authors={Tatsuki Fushimi, Daichi Tagami, Kenta Yamamoto, Yoichi Ochiai},
+  journal={Your Journal},
+  year={Your Year}
+}
+
