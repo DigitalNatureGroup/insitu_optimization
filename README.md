@@ -2,10 +2,10 @@
 
 ## Authors
 
-- Tatsuki Fushimi¹,²
+- Tatsuki Fushimi¹ ²
 - Daichi Tagami³
 - Kenta Yamamoto³
-- Yoichi Ochiai¹,²,⁴
+- Yoichi Ochiai¹ ² ⁴
 
 ### Affiliations
 1. Institute of Library, Information and Media Science, University of Tsukuba, Kasuga Campus Kasuga 1-2, Tsukuba, 305-8550, Ibaraki, Japan.
@@ -13,7 +13,7 @@
 3. Graduate School of Comprehensive Human Sciences, University of Tsukuba, Kasuga Campus Kasuga 1-2, Tsukuba, 305-8550, Ibaraki, Japan.
 4. Pixie Dust Technologies, Inc., Misakicho 2-20-5, Chiyoda, 101-0061, Tokyo, Japan.
 
-**Corresponding Author(s)**: tfushimi@slis.tsukuba.ac.jp
+**Corresponding Author(s)**: tfushimi(at)slis.tsukuba.ac.jp
 
 ---
 
@@ -161,6 +161,56 @@ The Step 3 script (`step_3_experimental_test_numerically_optimized.py`) generate
   - **Indexed By**: `{i, ii, iii}` for the setting. `{l}` indicates the try count.
   - **Columns**: Single column containing measured phase values.
 
+### Generated Files by Step 4
+
+The Step 4 script generates multiple files to capture both time stamps and optimization data.
+
+- `step_4_experiment_begin_time.txt`:
+  - **Directory**: `experiment_data`
+  - **Description**: This file contains the date and time at which the Step 4 experiment began.
+  - **Contents**: Single line text in the format "dd/mm/yyyy hh:mm:ss".
+
+- `step4_optimize_match_target_A{i, ii, iii}_N_{n}_loss_record_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the loss metrics during the optimization process for each target.
+  - **Indexed By**: `{i, ii, iii}` for the setting, `N_{n}` for the particular combination, and `{l}` for the try count.
+  - **Columns**: Single column containing loss values for each iteration.
+
+- `step4_optimize_match_target_A{i, ii, iii}_N_{n}_pat_phase_record_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the optimized phase values for each target.
+  - **Indexed By**: `{i, ii, iii}` for the setting, `N_{n}` for the particular combination, and `{l}` for the try count.
+  - **Columns**: Each column contains optimized phase values for each transducer.
+
+- `step4_optimize_match_target_A{i, ii, iii}_N_{n}_fft_freq_record_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the frequency spectrum used in the FFT analysis for each target.
+  - **Indexed By**: `{i, ii, iii}` for the setting, `N_{n}` for the particular combination, and `{l}` for the try count.
+  - **Columns**: Single column containing frequency values.
+
+- `step4_optimize_match_target_A{i, ii, iii}_N_{n}_fft_data_record_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the FFT magnitudes for each target.
+  - **Indexed By**: `{i, ii, iii}` for the setting, `N_{n}` for the particular combination, and `{l}` for the try count.
+  - **Columns**: Single column containing FFT magnitude values.
+
+- `step4_target_A{i, ii, iii}_optimized_final_amplitude_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the final optimized amplitude values for each setting.
+  - **Indexed By**: `{i, ii, iii}` for the setting and `{l}` for the try count.
+  - **Columns**: Single column containing final optimized amplitude values.
+
+- `step4_target_A{i, ii, iii}_optimized_final_phase_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the final optimized phase values for each setting.
+  - **Indexed By**: `{i, ii, iii}` for the setting and `{l}` for the try count.
+  - **Columns**: Single column containing final optimized phase values.
+
+- `step4_target_A{i, ii, iii}_optimized_final_elapsedtime_{l}_try.csv`:
+  - **Directory**: `experiment_data`
+  - **Description**: These files store the elapsed time for each optimization cycle for each setting.
+  - **Indexed By**: `{i, ii, iii}` for the setting and `{l}` for the try count.
+  - **Columns**: Single column containing the elapsed time in seconds.
 
 
 ---
