@@ -27,12 +27,9 @@ The need for accurate generation of acoustic holograms has increased with the pr
 
 1. [Introduction](#introduction)
 2. [Installation and Requirements](#installation-and-requirements)
-3. [Usage](#usage)
-4. [Data and Code Structure](#data-and-code-structure)
-5. [Simulation](#simulation)
-6. [Recreating Experiments](#recreating-experiments)
-7. [License](#license)
-8. [Citation](#citation)
+3. [Data and Code Structure](#data-and-code-structure)
+4. [License](#license)
+5. [Citation](#citation)
 
 ---
 
@@ -74,19 +71,21 @@ Detailed description and context.
 ## Data and Code Structure
 
 ### Main Directory
-
-- `step_1_exp_prep_move_mic.py`: Script for preparing the experiment, including moving the microphone to the initial position.
-- `step_2_numerical_optimize.py`: Script for numerical optimization of the acoustic field.
-- `step_3_experimental_test_numerically_optimized.py`: Script for experimentally testing the numerically optimized acoustic field.
-- `step_4_experimental_optimize2match.py`: Script for adjusting the experiment based on the numerical optimization results.
+Experiment 1: Acoustic Pressure Optimization
+- `step_1_exp_prep_move_mic.py`: Script for moving the microphone to the initial position for pressure measurements/optimization using OptoSigma XYZ Stage.
+- `step_2_numerical_optimize.py`: Script for finding numerical optimima using Diff-PAT.
+- `step_3_experimental_test_numerically_optimized.py`: Script for experimentally testing the numerically optimized acoustic field. Measurements using digital oscilloscope (TiePie Handyscope). 
+- `step_4_experimental_optimize2match.py`: Script for performing in-situ optimization based on the experimental measurements. 
 - `step_5_analyze_frequency_ver3.m`: MATLAB script for frequency analysis.
-- `step_5_compare_performance_ver2.m`: MATLAB script for performance comparison between experimental and numerical results.
-- `step_6_calculating_equilibirum.m`: MATLAB script for calculating the equilibrium state of the acoustic field.
-- `step_7_fit_equilibrium.m`: MATLAB script for fitting the calculated equilibrium state.
-- `step_8_exp_prep_move_calibrator.py`: Script for preparing the experiment, including moving the calibrator to the initial position.
+- `step_5_compare_performance_ver2.m`: MATLAB script for performance comparison between experimental and numerical optimization results.
+
+Experiment 2: Acoustic Levitation - Equilibrium Point Optimization
+- `step_6_calculating_equilibirum.m`: MATLAB script for calculating the equilibrium position of the levitated particle.
+- `step_7_fit_equilibrium.m`: MATLAB script for fitting the calculated equilibrium state (Refer to manuscript for reasonings).
+- `step_8_exp_prep_move_calibrator.py`: Script for preparing the experiment, including moving the optical calibrator to the initial position using XYZ stage.
 - `step_9_capture_calibration_image.py`: Script for capturing images for calibration.
 - `step_10_experimental_eq_nooptimization.py`: Script for experimental results without optimization.
-- `step_11_experimental_eq_optimization.py`: Script for experimental results with optimization.
+- `step_11_experimental_eq_optimization.py`: Script for performing in-situ optimizaition using camera, and measure performance of optimization.
 
 ### Subfolders
 
