@@ -93,7 +93,6 @@ Experiment 2: Acoustic Levitation - Equilibrium Point Optimization
 - `experiment_data`: This folder contains all the raw and processed data from the experiments.
 - `fig_gen`: This folder contains generated figures for the paper.
 - `numerical_simulated_results`: This folder contains the results of the numerical simulations.
-- 
 
 ### Generated CSV Files by Step 2
 
@@ -130,6 +129,47 @@ The script `step_2_numerical_optimize.py` is responsible for generating multiple
   - **Indexed By**: Each setting is indexed by `{i, ii, iii}`.
   - **Columns**: Acoustic phase obtained in the numerical simulation. 
   - **Rows**: Each row represents result for particular combination N_{n}.
+
+## Generated Files by Step 3
+
+The Step 3 script (`step_3_experimental_test_numerically_optimized.py`) generates multiple files to capture both time stamps and experimental data.
+
+### Text Files
+
+#### `step_3_experiment_begin_time.txt`
+- **Directory**: `experiment_data`
+- **Description**: This file contains the date and time at which the Step 3 experiment began.
+- **Contents**: Single line text in the format "dd/mm/yyyy hh:mm:ss".
+
+### CSV Files
+
+#### Experimental FFT Data
+
+##### `step3_optimize_match_target_A{i, ii, iii}_N_{n}_fft_freq_record_{l}_try.csv`
+- **Directory**: `experiment_data`
+- **Description**: These files store the frequency spectrum used in the FFT analysis.
+- **Indexed By**: `{i, ii, iii}` for the setting and `N_{n}` for the particular combination. `{l}` indicates the try count.
+- **Columns**: Single column containing frequency values.
+
+##### `step3_optimize_match_target_A{i, ii, iii}_N_{n}_fft_data_record_{l}_try.csv`
+- **Directory**: `experiment_data`
+- **Description**: These files contain FFT magnitudes.
+- **Indexed By**: `{i, ii, iii}` for the setting and `N_{n}` for the particular combination. `{l}` indicates the try count.
+- **Columns**: Single column containing FFT magnitude values.
+
+#### Amplitude and Phase Measurements
+
+##### `step3_compare_A{i, ii, iii}_numerical2experiment_amp_{l}_try.csv`
+- **Directory**: `experiment_data`
+- **Description**: These files store the measured amplitude data in the experiment for comparison with numerical data.
+- **Indexed By**: `{i, ii, iii}` for the setting. `{l}` indicates the try count.
+- **Columns**: Single column containing measured amplitude values.
+
+##### `step3_compare_A{i, ii, iii}_numerical2experiment_pha_{l}_try.csv`
+- **Directory**: `experiment_data`
+- **Description**: These files store the measured phase data in the experiment for comparison with numerical data.
+- **Indexed By**: `{i, ii, iii}` for the setting. `{l}` indicates the try count.
+- **Columns**: Single column containing measured phase values.
 
 ---
 
