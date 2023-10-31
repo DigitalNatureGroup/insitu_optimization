@@ -90,10 +90,9 @@ Detailed description and context.
 
 ### Subfolders
 
-- `composite_image`: This folder contains composite images used in the paper.
 - `discussion`: This folder contains discussion points and supplementary material.
 - `experiment_data`: This folder contains all the raw and processed data from the experiments.
-- `fig_gen`: This folder contains scripts and data for generating figures for the paper.
+- `fig_gen`: This folder contains generated figures for the paper.
 - `numerical_simulated_results`: This folder contains the results of the numerical simulations.
 
 ---
