@@ -93,6 +93,43 @@ Experiment 2: Acoustic Levitation - Equilibrium Point Optimization
 - `experiment_data`: This folder contains all the raw and processed data from the experiments.
 - `fig_gen`: This folder contains generated figures for the paper.
 - `numerical_simulated_results`: This folder contains the results of the numerical simulations.
+- 
+
+### Generated CSV Files by Step 2
+
+The script `step_2_numerical_optimize.py` is responsible for generating multiple CSV files containing numerically obtained optimization results. These files are stored in the `numerical_simulated_results` directory. Below are the details of these files:
+
+#### File Name Logic
+
+- `step_2_target_amp_list.csv`: 
+  - **Directory**: `numerical_simulated_results`
+  - **Description**: This file contains a list of target amplitudes, linearly spaced from 0.1 to 0.9 times the maximum amplitude.
+  - **Columns**: Single column containing the target amplitude values.
+  
+- `step_2_target_pha_list.csv`: 
+  - **Directory**: `numerical_simulated_results`
+  - **Description**: This file contains a list of target phases, linearly spaced from 0 to \(2\pi\).
+  - **Columns**: Single column containing the target phase values.
+
+- `step2_target_A{i, ii, iii}_N_{n}_phase_export.csv`: 
+  - **Directory**: `numerical_simulated_results`
+  - **Description**: These files contain the simulated phase information.
+  - **Indexed By**: Each setting is indexed by `{i, ii, iii}`, and the particular combination is indexed by `N_{n}`.
+  - **Columns**: Each column represents a phase delay for each transducers. It is indexed in the order of the transducer position as it appears on trans_x, trans_y, trans_z. 
+
+- `step_2_target_A{i, ii, iii}_performance_amp.csv`: 
+  - **Directory**: `numerical_simulated_results`
+  - **Description**: These files store the log of amplitude performance metrics in numerical optimization.
+  - **Indexed By**: Each setting is indexed by `{i, ii, iii}`.
+  - **Columns**: Acoustic amplitude obtained in the numerical simulation. 
+  - **Rows**: Each row represents result for particular combination N_{n}.
+
+- `step_2_target_A{i, ii, iii}_performance_pha.csv`: 
+  - **Directory**: `numerical_simulated_results`
+  - **Description**: These files store the log of phase performance metrics in numerical optimization.
+  - **Indexed By**: Each setting is indexed by `{i, ii, iii}`.
+  - **Columns**: Acoustic phase obtained in the numerical simulation. 
+  - **Rows**: Each row represents result for particular combination N_{n}.
 
 ---
 
@@ -101,10 +138,10 @@ Experiment 2: Acoustic Levitation - Equilibrium Point Optimization
 If you find this code useful for your research, please cite our paper.
 
 ```bibtex
-@article{your_paper_identifier,
+@article{insitu2023,
   title={In-situ Optimization of Acoustic Hologram with Digital Twin},
   authors={Tatsuki Fushimi, Daichi Tagami, Kenta Yamamoto, Yoichi Ochiai},
-  journal={Your Journal},
-  year={Your Year}
+  journal={Nature Communications Engineering},
+  year={2023}
 }
 
