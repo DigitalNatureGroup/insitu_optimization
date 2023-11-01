@@ -2,10 +2,10 @@
 
 ## Authors
 
-- Tatsuki Fushimi¹ ²
-- Daichi Tagami³
-- Kenta Yamamoto³
-- Yoichi Ochiai¹ ² ⁴
+- Tatsuki Fushimi ¹ ²
+- Daichi Tagami ³
+- Kenta Yamamoto ³
+- Yoichi Ochiai ¹ ² ⁴
 
 ### Affiliations
 1. Institute of Library, Information and Media Science, University of Tsukuba, Kasuga Campus Kasuga 1-2, Tsukuba, 305-8550, Ibaraki, Japan.
