@@ -212,7 +212,7 @@ The Step 4 script generates multiple files to capture both time stamps and optim
   - **Indexed By**: `{i, ii, iii}` for the setting and `{l}` for the try count.
   - **Columns**: Single column containing the elapsed time in seconds.
 
-### Step 5: Analyze Frequency - Generated Files
+### Generated Files by Step 5: Analyze Frequency
 
 In this MATLAB script for Step 5, the following files are generated:
 
@@ -224,7 +224,7 @@ In this MATLAB script for Step 5, the following files are generated:
     - **Directory**: `fig_gen`
     - **Description**: This PNG file visualizes the amplitude of the second harmonic for different target amplitudes.
 
-### Step 5: Compare Performance - Generated Files
+### Generated Files by Step 5: Compare Performance
 
 In this MATLAB script for Step 5, the following files are generated:
 
@@ -236,7 +236,7 @@ In this MATLAB script for Step 5, the following files are generated:
     - **Directory**: `fig_gen`
     - **Description**: This PNG/PDF file visualizes the performance difference between the numerical and experimental optimization. Plots amplitude and phase performance for A_iii.  
 
-### Step 6: Acoustic Radiation Force Calculation
+### Generated Files by Step 6
 
 This is Step 6 in a multi-step process. It calculates the pressure and acoustic radiation force based on various parameters.
 
@@ -244,8 +244,14 @@ This is Step 6 in a multi-step process. It calculates the pressure and acoustic 
   - **Directory**: numerical_simulated_results
   - **Description**: This MATLAB .mat file stores the equilibrium points calculated for different focal points in the x, y, z domain. Contains variables FY, FZ, and eq_store.
   
- 
-    
+ ### Generated Files by Step 7
+
+This is Step 7 in the multi-step process. It focuses on fitting curves to the equilibrium points obtained from Step 6, and saves the fit coefficients.
+
+- `step_7_fyfzey_coeff.csv`, `step_7_fyfzez_coeff.csv`:
+  - **Directory**: numerical_simulated_results
+  - **Description**: Two CSV files (`step_7_fyfzey_coeff.csv`, `step_7_fyfzez_coeff.csv`) in the `numerical_simulated_results` directory containing the coefficients of the fitted models for `e_y` and `e_z`.
+
 ---
 
 ## Citation
