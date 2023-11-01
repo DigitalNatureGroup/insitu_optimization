@@ -275,9 +275,9 @@ The script is responsible for image processing and data logging, using OpenCV an
 
 This script set the focal point, taking pictures, and storing image and numerical data. It utilizes various libraries including NumPy, pandas, libtiepie, and OpenCV among others. It takes pictures at various focal points and analyzes them, then saves this data in the form of images and CSV files. Below are the details of the generated files:
 
-- Image Files: `step_10_position_XX_N_XX_img.jpg`
+- Image Files: `step_10_position_XX_N_{l}_img.jpg`
   - **Directory**: `experiment_data`
-  - **Description**: These are the images taken at each focal point, where `XX` varies to denote the focal point and iteration number.
+  - **Description**: These are the images taken at each focal point, where `XX` varies to denote the focal point number, and 'l' denotes trial number.
   - **Format**: JPEG image files.
 
 - CSV Files: `step_10_rec_y_N_XX_data.csv` and `step_10_rec_z_N_XX_data.csv`
@@ -289,26 +289,25 @@ This script set the focal point, taking pictures, and storing image and numerica
 ### Generated Image and CSV Files by Step 11
 This script is designed for an experiment that involves setting focal points, capturing images, and conducting an optimization procedure. It employs various libraries, including TensorFlow for optimization, OpenCV for image capture and analysis, and more. The script captures images at various focal points, runs optimization algorithms, and stores the data in JPEG images and CSV files. Below are the details of the generated files:
 
-- Image Files: `step_11_optimized_position_XX_N_XX_img.jpg`
+- Image Files: `step_11_optimized_position_XX_N_{l}_img.jpg`
   - **Directory**: `experiment_data`
-  - **Description**: These JPEG images are captured at each focal point after the optimization process. `XX` denotes the focal point and iteration number.
+  - **Description**: These JPEG images are captured at each focal point after the optimization process. `XX` denotes the focal point number, and 'l' denotes trial number.
   - **Format**: JPEG image files.
 
-- `step_11_optimize_record_XX_N_XX_loss.csv`
+- `step_11_optimize_record_XX_N_{l}_loss.csv`
   - **Directory**: `experiment_data`
-  - **Description**: These files contain the loss values recorded during the optimization process for each focal point and iteration `XX`.
+  - **Description**: These files contain the loss values recorded during the optimization process for each focal point number, and 'l' denotes trial number.
   - **Columns**: Single column containing the loss values.
 
-- `step_11_optimize_record_XX_N_XX_focal_opt_y.csv` and `step_11_optimize_record_XX_N_XX_focal_opt_z.csv`
+- `step_11_optimize_record_XX_N_{l}_focal_opt_y.csv` and `step_11_optimize_record_XX_N_{l}_focal_opt_z.csv`
   - **Directory**: `experiment_data`
-  - **Description**: These files contain the optimized y and z coordinates of the focal point, respectively, for each iteration `XX`.
+  - **Description**: These files contain the optimized y and z coordinates of the focal point, respectively, for each iteration `XX` number, and 'l' denotes trial number.
   - **Columns**: Single column containing the y or z coordinate values in millimeters.
 
 - `step_11_rec_y_N_XX_data.csv` and `step_11_rec_z_N_XX_data.csv`
   - **Directory**: `experiment_data`
   - **Description**: These files contain the recorded y and z coordinates of the focal point, respectively, for each iteration `XX`.
   - **Columns**: Single column containing the y or z coordinate values in millimeters.
-
 
 ---
 
