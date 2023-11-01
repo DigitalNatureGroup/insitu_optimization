@@ -310,6 +310,23 @@ This script is designed for an experiment that involves setting focal points, ca
   - **Columns**: Single column containing the y or z coordinate values in millimeters.
 
 ---
+## License
+License Type
+This repository is licensed under a Research-Only License.
+
+Terms and Conditions
+General Use: The code, data, and any associated materials in this repository are made available strictly for academic research purposes. Any commercial use or application based on this repository is strictly prohibited.
+
+Attribution: If you use the code, data, or any materials from this repository in your research, proper attribution should be given. The citation should include the title of the repository, the authors, and any related publications.
+
+Modification: You are allowed to modify the code for your research purposes. However, any distribution of the modified code must also be under this same license and for research-only purposes.
+
+No Warranty: The code, data, and any materials in this repository are provided "as is" without any warranty of any kind, either express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+Liability: The authors or institutions associated with this repository shall not be liable for any claims, damages, or other liabilities arising from the use of this repository.
+
+
+---
 
 ## Citation
 
