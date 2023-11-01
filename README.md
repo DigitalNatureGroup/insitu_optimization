@@ -271,7 +271,7 @@ The script is responsible for image processing and data logging, using OpenCV an
     - `z_offset_pix`: Z offset in pixels
     - `pix2mm`: Conversion factor from pixels to millimeters (mm per pixel).
 
-### Generated Image and CSV Files by Unnamed Step 10 Script
+### Generated Image and CSV Files by Step 10
 
 This script set the focal point, taking pictures, and storing image and numerical data. It utilizes various libraries including NumPy, pandas, libtiepie, and OpenCV among others. It takes pictures at various focal points and analyzes them, then saves this data in the form of images and CSV files. Below are the details of the generated files:
 
@@ -286,7 +286,7 @@ This script set the focal point, taking pictures, and storing image and numerica
   - **Columns**: 
     - Single column containing the y or z coordinate values in millimeters.
 
-### Generated Image and CSV Files by Unnamed Step 11 Script
+### Generated Image and CSV Files by Step 11
 This script is designed for an experiment that involves setting focal points, capturing images, and conducting an optimization procedure. It employs various libraries, including TensorFlow for optimization, OpenCV for image capture and analysis, and more. The script captures images at various focal points, runs optimization algorithms, and stores the data in JPEG images and CSV files. Below are the details of the generated files:
 
 - Image Files: `step_11_optimized_position_XX_N_XX_img.jpg`
