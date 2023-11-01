@@ -35,7 +35,7 @@ The need for accurate generation of acoustic holograms has increased with the pr
 
 ## Introduction
 
-Detailed description and context.
+This repository contains a comprehensive suite of MATLAB and Python scripts, along with associated data, aimed at optimizing acoustic holograms using a digital twin approach. The codebase is designed to handle various aspects of both numerical simulations and experimental setups. It covers acoustic pressure optimization, equilibrium point optimization in acoustic levitation, and performance comparison between numerical and experimental results.
 
 ---
 
