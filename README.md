@@ -252,6 +252,26 @@ This is Step 7 in the multi-step process. It focuses on fitting curves to the eq
   - **Directory**: numerical_simulated_results
   - **Description**: Two CSV files (`step_7_fyfzey_coeff.csv`, `step_7_fyfzez_coeff.csv`) in the `numerical_simulated_results` directory containing the coefficients of the fitted models for `e_y` and `e_z`.
 
+### Generated Text and CSV Files by Step 9
+
+The script is unnamed but is responsible for image processing and data logging, using OpenCV and pypuclib among other libraries. It captures images from a camera, detects circles, and exports data for later usage. Below are the details of the generated files:
+
+- `step_9_experiment_begin_time.txt:`
+  - **Directory**: `experiment_data`
+  - **Description**: This file contains the start time and date of the experiment, formatted as "DD/MM/YYYY HH:MM:SS".
+  - **Columns**: N/A (Single line text file containing the datetime string).
+
+- `step_9_calibrationdata.csv:`
+  - **Directory**: `experiment_data`
+  - **Description**: This file contains calibration data including offsets in millimeters and pixels, and the pixel to millimeter conversion factor.
+  - **Columns**: 
+    - `y_offset_mm`: Y offset in millimeters
+    - `z_offset_mm`: Z offset in millimeters
+    - `y_offset_pix`: Y offset in pixels
+    - `z_offset_pix`: Z offset in pixels
+    - `pix2mm`: Conversion factor from pixels to millimeters (mm per pixel).
+
+
 ---
 
 ## Citation
